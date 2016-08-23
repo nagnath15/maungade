@@ -1,1 +1,158 @@
-snkjdfhksfdfhkjjshd kshkbskjfh
+<!DOCTYPE html>
+<html>
+<head>
+<title>SERVICES25</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords"/>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- animate css -->
+<link rel="stylesheet" href="css/animate.min.css" type="text/css" media="all" />
+<!--// animate css -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- gallery -->
+<link href='css/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+<!-- //gallery -->
+<!--services-->
+<link rel="stylesheet" 	href="css/swipebox.css"	type="text/css" media="all">
+<!--services-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- parallax -->
+<script src="js/SmoothScroll.min.js"></script>
+<!-- //parallax -->
+<style>
+.image img {
+height:110px;
+width: 150px;
+vertical-align: top;
+}
+
+.effect:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+</style>
+<body onLoad="startLoop();">
+		
+		<div class="container-fluid" style="height:120px;background:linear-gradient(gray,white);">
+				<h3 class="bounceInDown">Header</h3><ul class="bounce"><li>Menu1</li></ul>
+		</div>
+		<div class="container-fluid">
+			<marquee  behaviour="alternative" id="services" loop="true" scrollamount="20"  scrolldelay="300" onMouseOver="this.stop();" onMouseOut="this.start();">
+				<div class="image" style="visibility:visible;">
+						<a href="images/g6.jpg" class="effect"><img src="images/g6.jpg" alt="service1"/></a>
+						<a href="images/g3.jpg" class="effect"><img src="images/g3.jpg" alt="service2"/></a>
+						<a href="images/g5.jpg" class="effect"><img src="images/g5.jpg" alt="service3"/></a>
+						<a href="images/g8.jpg" class="effect"><img src="images/g8.jpg" alt="service4"/></a>
+						<a href="images/g2.jpg" class="effect"><img src="images/g2.jpg" alt="service5"/></a>
+						
+						<a href="images/g4.jpg" class="effect"><img src="images/g4.jpg" alt="service6"/></a>
+						<a href="images/g6.jpg" class="effect"><img src="images/g6.jpg" alt="service7"/></a>
+						<a href="images/g3.jpg" class="effect"><img src="images/g3.jpg" alt="service8"/></a>
+						<a href="images/g5.jpg" class="effect"><img src="images/g5.jpg" alt="service9"/></a>
+						<a href="images/g8.jpg" class="effect"><img src="images/g8.jpg" alt="service10"/></a>
+						
+						<a href="images/g2.jpg" class="effect"><img src="images/g2.jpg" alt="service11"/></a>
+						<a href="images/g4.jpg" class="effect"><img src="images/g4.jpg" alt="service12"/></a>
+						<a href="images/g3.jpg" class="effect"><img src="images/g3.jpg" alt="service13"/></a>
+						<a href="images/g5.jpg" class="effect"><img src="images/g5.jpg" alt="service14"/></a>
+						<a href="images/g8.jpg" class="effect"><img src="images/g8.jpg" alt="service15"/></a>
+						
+						<a href="images/g2.jpg" class="effect"><img src="images/g2.jpg" alt="service16"/></a>
+						<a href="images/g4.jpg" class="effect"><img src="images/g4.jpg" alt="service17"/></a>
+						<a href="images/g3.jpg" class="effect"><img src="images/g3.jpg" alt="service18"/></a>
+						<a href="images/g5.jpg" class="effect"><img src="images/g5.jpg" alt="service19"/></a>
+						<a href="images/g8.jpg" class="effect"><img src="images/g8.jpg" alt="service20"/></a>
+						
+						<a href="images/g2.jpg" class="effect"><img src="images/g2.jpg" alt="service21"/></a>
+						<a href="images/g4.jpg" class="effect"><img src="images/g4.jpg" alt="service22"/></a>
+						<a href="images/g8.jpg" class="effect"><img src="images/g8.jpg" alt="service23"/></a>
+						<a href="images/g2.jpg" class="effect"><img src="images/g2.jpg" alt="service24"/></a>
+						<a href="images/g4.jpg" class="effect"><img src="images/g4.jpg" alt="service25"/></a>	
+				</div>
+			</marquee>
+</div>
+			<div class="container-fluid">
+				  <marquee direction="left">
+				  <div class="a2" id="service1"><h1 class="bounceInDown">SERVICES</h1></div>
+				  <!--<img src="images/hand121.png" width="130px" id="hand1" />-->
+				  </marquee> 
+			 </div>
+			<div class="container-fluid" style="height:120px;background:linear-gradient(white,gray); visibility:hidden;">
+				<h2>...Footer...</h2>
+			</div>
+				<script type="text/javascript" src="js/simple-lightbox.js"></script>
+					<script>
+						$(function(){
+							var $gallery = $('.image a').simpleLightbox();
+							
+							$gallery.on('show.simplelightbox', function(){
+								console.log('Requested for showing');
+							})
+							.on('shown.simplelightbox', function(){
+								console.log('Shown');
+							})
+							.on('close.simplelightbox', function(){
+								console.log('Requested for closing');
+							})
+							.on('closed.simplelightbox', function(){
+								console.log('Closed');
+							})
+							.on('change.simplelightbox', function(){
+								console.log('Requested for change');
+							})
+							.on('next.simplelightbox', function(){
+								console.log('Requested for next');
+							})
+							.on('prev.simplelightbox', function(){
+								console.log('Requested for prev');
+							})
+							.on('nextImageLoaded.simplelightbox', function(){
+								console.log('Next image loaded');
+							})
+							.on('prevImageLoaded.simplelightbox', function(){
+								console.log('Prev image loaded');
+							})
+							.on('changed.simplelightbox', function(){
+								console.log('Image changed');
+							})
+							.on('nextDone.simplelightbox', function(){
+								console.log('Image changed to next');
+							})
+							.on('prevDone.simplelightbox', function(){
+								console.log('Image changed to prev');
+							})
+							.on('error.simplelightbox', function(e){
+								console.log('No image found, go to the next/prev');
+								console.log(e);
+							});
+						});
+					</script>
+				   
+					<script>		
+							function startLoop(){
+							setInterval( "doSomething()", 5000 ); }
+							function doSomething(){ 
+							//$('#services').stop();
+							//$('#service1').css("background-color", "#ff0055");
+							//$('#hand1').css("left", "100");
+							
+							//$("#hand1").stop(true,true);
+							//$('#service1').stop( true,true).fadeOut();
+							//$('.image').css("visibility","visible");
+							//
+							//$("#service1").stop( true, true ).fadeOut();
+							//$(this).clearQueue();	
+							}
+					</script>	
+</body>
+</html>
